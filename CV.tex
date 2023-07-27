@@ -1,0 +1,74 @@
+%
+% github: https://github.com/Netherfield
+%
+% CV template
+% Curriculum Vitae
+%
+% minimal and concise
+%
+% references for styling options Wikibooks, tex.stackexchange.com and overleaf.com
+
+\documentclass[11pt]{article}
+
+\input{styles}
+
+\begin{document}
+
+% top matter, meta-data
+\title{Name Surname CV}
+\author{Name Surname}
+\date{July 2023}
+% uncomment to show metadata in pdf
+% \maketitle
+
+% title
+\centerline{\bfseries{NAME SURNAME: CURRICULUM VITÆ}}
+
+\bigskip
+
+% table w\ info
+\begin{longtable}{ l p{4.5in}}
+Name & Name SURNAME \\
+Nationality & Earthling \\
+Date and place of birth & 1 January 2000
+\newline 0001 Nursery Blvd. \\
+Address &
+10AA Dwelling St. 
+\newline Hometown, AB1 1AB, Interzone
+\newline Phone: (235) 643 6343
+\newline E-mail: namesurname@email.com
+\newline Linkedin: \href{https://www.linkedin.com/}{name surname}
+\newline GitHub: \href{https://github.com/}{Name Surname}
+\\
+\end{longtable}
+
+\bigskip
+
+\paragraph*{\centerline{\bfseries{WORK AND SCHOOL CAREER}}}
+\begin{longtable}{ R{1in} p{4.5in}}
+2021-2023 & Worked as Emplyee for COMPANY INC. \\
+2019-2021 & Existence Engineering student at ONTOLOGY UNIVERSITY of SCIENCES \\
+2018 & Internship for SEARCH ENGINE COMPANY ( 3 months ) \\
+\end{longtable}
+
+\bigskip
+
+\paragraph*{\centerline{\bfseries{Learned Skills}}}
+\begin{itemize}
+    \item Languages
+    \begin{itemize}
+        \item Native proficiency in American English
+        \item Elementary knowledge of British English
+    \end{itemize}
+    \item Computer and web related
+    \begin{itemize}
+        \item OS: Windows XP service pack 3
+        \item Office Suite
+        \item Software Git and Visual Studio Code
+        \item Elementary knowledge of C{\textbackslash}C++ and \LaTeX
+    \end{itemize}
+
+\end{itemize}
+
+
+\end{document}

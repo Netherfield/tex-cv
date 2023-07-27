@@ -1,0 +1,40 @@
+%
+% Packages to use and style preferences for the document
+%
+
+% packages here
+\usepackage{longtable}
+% create a right aligned column type
+\usepackage{array}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+% define page layout
+\usepackage{geometry}
+    \geometry{
+        a4paper,
+        total={170mm,257mm},
+        left=20mm,
+        top=30mm,
+    }
+
+% enable use of hyperlinks
+\usepackage{hyperref}
+    \hypersetup{
+        colorlinks=true, %remove unsightly boxes
+        urlcolor=blue,
+        linkcolor=blue % this is for local links
+        citecolor=red % citations
+    }
+
+
+% use a language with no hyphenation ( can create conflict with babel )
+\usepackage[none]{hyphenat}
+
+% sets level 2 list bullet mark to bullet ( default is hyphen )
+\renewcommand{\labelitemii}{$\bullet$}
+
+% this is not a book we don't need numbering
+\pagenumbering{gobble}
+
+
+
